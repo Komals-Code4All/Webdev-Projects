@@ -1,0 +1,37 @@
+/* Simple CSS for general purpose styling */
+
+body {
+	background-color: rgb(93, 50, 203);
+	color: white;
+	font-size: xx-large;
+}
+
+h1 {
+	text-shadow: 3px 3px 5px greenyellow;
+}
+button {
+	background-color: rgb(207, 225, 47);
+	font-size: x-large;
+	border: 10x 10px solid;
+	border-color: greenyellow;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+@keyframes fade-in {
+	from {
+		color: rgb(93, 50, 203);
+	}
+	to {
+		color: white;
+	}
+}
+
+#punchline {
+	animation-name: fade-in;
+	animation-duration: 10s;
+}
