@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- To Do List 
+    
+    Simple To Do List example using an array to store things to do 
+
+    The user enters a line of text for the task to be done. 
+    This is then added to the array and displayed as a list 
+    in the lower half of the web page. 
+
+    The user can delete tasks, move tasks up and move tasks down. 
+
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Komal Karir" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<!-- Font Awesome icon library -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
+		<title>To Do List</title>
+	</head>
+
+	<body>
+		<!-- Standard header  -->
+		<header>
+			<h1>To Do List</h1>
+		</header>
+
+		<main>
+			<!-- Input section of web page ------------------------------------------------>
+			<section id="formInput">
+				<fieldset>
+					<legend>To Do</legend>
+
+					<!-- to-do text field-->
+					<label for="taskToDo"></label>
+					<input
+						id="taskToDo"
+						type="text"
+						name="taskToDo"
+						placeholder="New task"
+						required
+					/>
+
+					<!-- button to ADD a task to the array -->
+					<button onclick="addTask(taskToDo.value)">
+						<i class="fa fa-check"></i>
+					</button>
+
+					<!-- button to print the task list -->
+					<button onclick="printTaskList()">
+						<i class="fa fa-print"></i>
+					</button>
+				</fieldset>
+			</section>
+
+			<!-- Output section of the page ----- js generates a <table> as output -------------------->
+			<section id="outputArea"></section>
+		</main>
+
+		<!-- Standard footer -->
+		<footer>
+			<h5>&copy; Komal Karir</h5>
+		</footer>
+
+		<script src="assets/scripts/script.js" defer></script>
+	</body>
+</html>

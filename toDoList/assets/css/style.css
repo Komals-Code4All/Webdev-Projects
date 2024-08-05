@@ -1,0 +1,87 @@
+/*  To Do List */
+
+/* apply to every element */
+* {
+	padding: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+body {
+	background-color: snow;
+	color: black;
+}
+
+/* standard header */
+header {
+	width: 100%;
+	text-align: center;
+}
+
+/* standard footer */
+footer {
+	width: 100%;
+	text-align: center;
+}
+
+/* user input area */
+fieldset {
+	width: fit-content;
+	box-shadow: 5px 5px gainsboro;
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
+/*  delete, move-up, move-down buttons */
+button {
+	background-color: slateblue;
+	border: none;
+	color: yellow;
+	padding: 5px 5px;
+	font-size: larger;
+	cursor: pointer;
+}
+
+button:hover:not(.disabled) {
+	background-color: yellowgreen;
+	color: yellow;
+	cursor: pointer;
+}
+
+/* show as faded-out button if disabled */
+button.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+/* list of to-do items */
+table {
+	margin-left: 5%;
+	width: 90%;
+	border: 3px solid black;
+	box-shadow: 5px 5px gainsboro;
+}
+
+/* shade every other row  */
+tr:nth-child(even) {
+	background-color: lightgray;
+}
+
+/* table headings */
+th {
+	font-weight: bold;
+	border: 2px solid black;
+}
+
+/* table data */
+td {
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	font-size: x-large;
+}
+
+/* task buttons */
+td > button {
+	padding: 5px 5px;
+	text-align: center;
+}
