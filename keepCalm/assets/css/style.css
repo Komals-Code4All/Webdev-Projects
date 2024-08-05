@@ -1,0 +1,52 @@
+/* Keep Calm and Carry On */
+
+body {
+	background-color: #ffffff;
+	color: #ffffff;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Arial";
+}
+
+/* poster is a red rectangle */
+.poster {
+	background-color: #db0000;
+	margin: 10px auto;
+	max-width: 350px;
+	padding: 30px 10px;
+	border: 5px double #ffffff;
+}
+
+/* set poster's font attributes */
+.poster p {
+	font-size: 60px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+/* display text one word per line */
+.poster p span {
+	display: block;
+}
+
+/* 'and' in a smaller sized text */
+.poster p span.and {
+	font-size: 50%;
+}
+
+/* user's message */
+.poster p span.message {
+	font-size: 100%;
+}
+
+input {
+	color: dodgerblue;
+	background-color: darkblue;
+	font-size: larger;
+}
+
+input:hover {
+	color: darkblue;
+	background-color: dodgerblue;
+}

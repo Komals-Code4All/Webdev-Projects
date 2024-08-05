@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Display "Keep Calm and ... " poster,
+    with a button to allow user to change the message -->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Keep Calm</title>
+	</head>
+
+	<body>
+		<!-- main content -->
+		<main>
+			<section id="poster" class="poster">
+				<article>
+					<!-- crown image -->
+					<img id="icon" src="assets/images/crown.png" width="130" />
+				</article>
+
+				<article>
+					<!-- upper part of poster -->
+					<p>
+						<span>Keep</span>
+						<span>Calm</span>
+						<span class="and">and</span>
+
+						<!-- lower part of poster that can be amended -->
+						<span class="message" id="message">Carry on Coding</span>
+					</p>
+				</article>
+			</section>
+
+			<section>
+				<!-- input button to allow user input -->
+				<input
+					type="button"
+					value="Change Text"
+					onClick="JavaScript: changeText();"
+				/>
+			</section>
+		</main>
+
+		<script>
+			/* prompt user for new message */
+			function changeText() {
+				document.getElementById("message").innerHTML =
+					prompt("Keep calm and... ?");
+			}
+		</script>
+	</body>
+</html>
