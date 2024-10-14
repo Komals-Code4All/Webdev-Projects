@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Guess the Number</title>
+  </head>
+
+  <body>
+
+    <!-- Container for the game -->
+    <div class="container"> 
+
+      <h1>GUESS THE NUMBER!</h1>
+      <h2>
+        A random number between 1 and 100 will be generated. The
+        computer will guide you higher or lower!
+        <br>
+        How many attempts will it take
+        you?
+      </h2>
+
+      <!--Random Number Box - should be hidden until user guess processed-->
+      <div class="numberBox">
+        <h1 id="displayNumber">?</h1>
+      </div>
+
+      <p>Please enter your guess below</p>
+    
+        <!--Form for user to submit their guess-->
+      <form id="guessForm">
+          <input type="text" id="userGuess" placeholder="enter number">
+          <button type="submit" id="submitGuess">Submit Guess</button>
+      </form>
+
+      <!--Result text box - displays whether correct, higher or lower-->
+      <h2 id="resultText"></h2>
+      <button class="resetButton" onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>

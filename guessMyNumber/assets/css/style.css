@@ -1,0 +1,81 @@
+/* 
+CSS - Guess My Number - Patrick Coughlan September 2024
+*/
+
+body {
+	background: darkslategrey;
+	color: #fcbe24;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.container {
+	width: 70%;
+	max-width: 600px;
+}
+
+h1 {
+	font-size: 2.5rem;
+	color: cornsilk;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+#displayNumber {
+	font-size: 5rem;
+	margin: 0 auto;
+	color: darkslategrey;
+	animation: fadeIn 1s;
+	justify-content: center;
+}
+
+.numberBox {
+	display: flex;
+	height: 120px;
+	width: 120px;
+	border-radius: 60px;
+	margin: auto;
+	background-color: cornsilk;
+	font-size: large;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fcbe24;
+	color: darkslategrey;
+}
+
+input,
+button {
+	font-family: inherit;
+	all: unset;
+	background-color: cornsilk;
+	height: 20px;
+	color: darkslategrey;
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#resultText {
+	/* initial state without animation */
+}
